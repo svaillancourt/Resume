@@ -1,0 +1,184 @@
+* {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+  }
+  .item {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+.home { background: url('../img/backgrounds/90s-pattern-1.jpg'); }
+.about-me { background: rgb(247, 247, 247); }
+.picture { background: rgb(122, 220, 111)}
+.education { background: rgb(17, 142, 180); }
+.certifications { background: lightgreen; }
+.soft-skills { background: yellow; }
+.technical-skills { background: rgb(133, 113, 241); }
+.job1 { background: lightsalmon; }
+.job2 { background: lightskyblue; }
+.job3 { background: lightgray; }
+.job4 { background: lightgoldenrodyellow; }
+.title1 { background: rgb(145, 190, 169); }
+.title2 { background: rgb(223, 76, 31); }
+.title3 { background: rgb(24, 176, 223); }
+.title4 { background: rgb(187, 231, 245); }
+.title5 { background: rgb(24, 176, 223); }
+.title6 { background: rgb(59, 118, 136); }
+.volunteer1 { background: rgb(255, 135, 135); }
+.volunteer2 { background: rgb(255, 174, 174); }
+.contact-me { background: green; }
+.footer { background: cyan; }
+
+/**/
+
+.home { grid-area: home; margin-top: 51px;}
+.about-me { grid-area: about-me; margin-top: 51px;}
+.picture { grid-area: picture; }
+.education { grid-area: education; }
+.certifications { grid-area: certifications; }
+.soft-skills { grid-area: soft-skills; }
+.technical-skills { grid-area: technical-skills; }
+.title1 { grid-area: title1; }
+.title2 { grid-area: title2; }
+.title3 { grid-area: title3; }
+.title4 { grid-area: title4; }
+.title5 { grid-area: title5; }
+.title6 { grid-area: title6; }
+.job1 { grid-area: job1; }
+.job2 { grid-area: job2; }
+.job3 { grid-area: job3; }
+.job4 { grid-area: job4; }
+.volunteer1 { grid-area: volunteer1; }
+.volunteer2 { grid-area: volunteer2; }
+.contact-me { grid-area: contact-me; }
+.footer { grid-area: footer; }
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto /* 1 */
+                        auto /* 2 */
+                        auto /* 3 */
+                        auto /* 4 */  
+                        auto /* 5 */
+                        auto /* 6 */
+                        auto /* 7 */
+                        auto /* 8 */
+                        auto /* 9 */
+                        auto /* 10 */
+                        auto /* 11 */
+                        auto /* 12 */
+                        auto /* 13 */
+                        auto /* 14 */
+                        auto /* 15 */
+                        auto /* 16 */
+                        auto /* 17 */
+                        auto /* 18 */
+                        auto /* 19 */
+                        auto /* 20 */
+                        auto; /* 21 */
+
+    grid-template-areas:
+
+    "home" /* Row one: hero spans two columns. */
+    "about-me" /*row 2*/
+    "picture"  /*row 3*/
+    "title1" /*row 4*/
+    "education" /*row 5*/
+    "title2" /* Row 6 */
+    "certifications" /* Row 7 */
+    "title5" /* Row 8 */
+    "soft-skills" /* Row 9 */
+    "title6"  /* Row 10 */
+    "technical-skills" /* Row 11 */
+    "title3" /* Row 12 */
+    "job1" /* Row 12 */
+    "job2" /* Row 13 */
+    "job3" /* Row 14 */
+    "job4" /* Row 15 */
+    "title4" /* Row 16 */
+    "volunteer1"  /* Row 17 */
+    "volunteer2" /* Row 18 */
+    "contact-me" /* Row 19 */
+    "footer" /* row 20 */
+    }
+
+
+@media screen and ( min-width: 500px ) {
+
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto /* 1 */
+                        auto /* 2 */
+                        auto /* 3 */
+                        auto /* 4 */  
+                        auto /* 5 */
+                        auto /* 6 */
+                        auto /* 7 */
+                        auto /* 8 */
+                        auto /* 9 */
+                        auto /* 10 */
+                        auto /* 11 */
+                        auto /* 12 */
+                        auto;/* 13 */ /* based on the number of rows */;
+    grid-template-areas:
+
+    "home home about-me about-me" /* Row one: hero spans two columns. */
+    "picture picture picture picture" /* Row two: each is one cell. */
+    "title1 title1 title2 title2" /* Row 3: each is one cell. */
+    "education education certifications certifications" /* Row 4: each is one cell. */
+    "title5 title5 title6 title6" /* Row 5: each is one cell. */
+    "soft-skills soft-skills technical-skills technical-skills" /* Row 6: third-service spans two columns.  */
+    "title3 title3 title3 title3" /* Row 7: each is one cell. */
+    "job1 job1 job2 job2" /* Row 8: third-service spans two columns.  */
+    "job3 job3 job4 job4" /* Row 9: third-service spans two columns.  */
+    "title4 title4 title4 title4" /* Row 10: each is one cell. */
+    "volunteer1 volunteer1 volunteer2 volunteer2" /* Row 11: each is one cell. */
+    "contact-me contact-me contact-me contact-me" /*row 12 */
+    "footer footer footer footer" /* row 13 */
+    }
+}
+
+/* Desktop size */
+@media screen and ( min-width: 1024px ) {
+
+    body{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto /* 1 */
+                            auto /* 2 */
+                            auto /* 3 */
+                            auto /* 4 */  
+                            auto /* 5 */
+                            auto /* 6 */
+                            auto /* 7 */
+                            auto /* 8 */
+                            auto /* 9 */
+                            auto /* 10 */
+                            auto /* 11 */
+                            auto /* 12 */
+                            auto;/* 13 */ /* based on the number of rows */;
+        grid-template-areas:
+    
+        "home home about-me about-me" /* Row one: hero spans two columns. */
+        "picture picture picture picture" /* Row two: each is one cell. */
+        "title1 title1 title2 title2" /* Row 3: each is one cell. */
+        "education education certifications certifications" /* Row 4: each is one cell. */
+        "title5 title5 title6 title6" /* Row 5: each is one cell. */
+        "soft-skills soft-skills technical-skills technical-skills" /* Row 6: third-service spans two columns.  */
+        "title3 title3 title3 title3" /* Row 7: each is one cell. */
+        "job1 job1 job2 job2" /* Row 8: third-service spans two columns.  */
+        "job3 job3 job4 job4" /* Row 9: third-service spans two columns.  */
+        "title4 title4 title4 title4" /* Row 10: each is one cell. */
+        "volunteer1 volunteer1 volunteer2 volunteer2" /* Row 11: each is one cell. */
+        "contact-me contact-me contact-me contact-me" /*row 12 */
+        "footer footer footer footer" /* row 13 */
+    }
+}

@@ -1,0 +1,204 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  /*background-image: url(../img/backgrounds/90s-pattern-1.jpg); /*The image used */
+  opacity: 1;        /*varies from 0-1*/
+  background-position: top left; /* Center the image */
+  background-repeat: repeat; /* repeat the image */
+}
+
+h1, h2, h3, h4, section, p{
+
+    background-color: transparent;
+    font-family: 'Roboto' ;
+
+}
+
+article {
+    width: auto;
+ 
+    margin-left: auto;
+    margin-right: auto;
+   
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+p{   
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    text-align: left;
+    color:black;
+
+    line-height: 1.7;
+    font-size: small;
+}
+
+#profile-picture /* # equals an ID*/ {
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#description-title /* # equals an ID*/ {
+    
+    font-size: xx-large;
+
+    padding-top: 150px;
+    /* padding-top: 50px; */
+    padding-bottom: 0px;
+    padding-left: 32px;
+}
+
+#description-sub /* # equals an ID*/ {
+    
+    font-size: xx-large;
+    
+    padding-top: 0px;
+    /* padding-top: 50px; */
+    padding-bottom: 10px;
+    padding-left: 32px;
+}
+
+#contact-methods li{ /* Direct child selector ">" 
+    The LI must be directly inside the element with the "social-media-links" id in this case.*/
+    display: inline-block;
+}
+
+#contact-methods .fab{     
+    
+    /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
+    /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#contact-methods a:hover .fab,
+#contact-methods a:focus .fab,
+#contact-methods a:active .fab{     /* Psuedo=selector with nesting.*/
+    color:rgba(250,66,54, 0.85);
+    font-size: 20px;
+}
+
+footer{
+    opacity: 1;
+}
+
+.banner-title{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+
+    padding: 32px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+  }
+
+.title-spacing{
+
+    width: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 0px;
+}
+
+.list-spacing{
+
+    width: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+
+    font-size: medium;    
+    line-height: 1.7;
+}
+
+.text-lists{
+
+    width: auto;
+
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    font-size: small;    
+    line-height: 1.7;
+}
+
+.button {
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    background-color: rgb(24, 107, 214);
+    display: inline-block;
+    width: 25%;
+
+    border: none;
+    /* border-radius: 15px 50px; */
+    padding: 15px 32px;
+ 
+    margin-top: 16px;
+    margin-left: 32px;
+    
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: rgb(117,59,189); 
+    color: white;
+  }
+
+  .button2 {
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    background-color: rgb(134, 39, 212);
+    display: inline-block;
+    width: 20%;
+
+    border: none;
+    /* border-radius: 15px 50px; */
+    padding: 15px 32px;
+ 
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    font-size: 16px;
+  }
+
+  .button2:hover {
+    background-color: rgb(177, 55, 25); 
+    color: white;
+  }
