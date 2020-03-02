@@ -97,6 +97,10 @@ footer{
     padding: 32px;
 }
 
+.logos{
+    float: center;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -155,14 +159,16 @@ footer{
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
     background-color: rgb(24, 107, 214);
     display: inline-block;
-    width: 25%;
+    width: 18%;
 
     border: none;
     /* border-radius: 15px 50px; */
     padding: 15px 32px;
  
     margin-top: 16px;
-    margin-left: 32px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     
     text-align: center;
     text-decoration: none;
