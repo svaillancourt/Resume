@@ -13,9 +13,15 @@
     left: 30px;
   }
 
+  /* rgb(224,152,189)  pink */ 
+  /* rgb(251,67,55)   red  */
+  /* rgb(254,249,103)  yellow */
+  /* rgb(24,101,181)  blue */
+  /* rgb(113,204,195)  teal */
+  
 .home { background: url('../img/backgrounds/90s-pattern-1.jpg'); }
 .about-me { background: rgb(247, 247, 247); }
-.picture { background: rgb(24, 176, 223)};
+.nav { background: rgb(24, 176, 223)};
 .education { background: rgb(17, 142, 180); }
 .certifications { background: lightgreen; }
 .soft-skills { background: yellow; }
@@ -37,9 +43,9 @@
 
 /**/
 
-.home { grid-area: home; margin-top: 51px;}
-.about-me { grid-area: about-me; margin-top: 51px;}
-.picture { grid-area: picture; }
+.home { grid-area: home; }
+.about-me { grid-area: about-me; }
+.nav { grid-area: nav; }
 .education { grid-area: education; }
 .certifications { grid-area: certifications; }
 .soft-skills { grid-area: soft-skills; }
@@ -60,53 +66,7 @@
 .footer { grid-area: footer; }
 
 body {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto /* 1 */
-                        auto /* 2 */
-                        auto /* 3 */
-                        auto /* 4 */  
-                        auto /* 5 */
-                        auto /* 6 */
-                        auto /* 7 */
-                        auto /* 8 */
-                        auto /* 9 */
-                        auto /* 10 */
-                        auto /* 11 */
-                        auto /* 12 */
-                        auto /* 13 */
-                        auto /* 14 */
-                        auto /* 15 */
-                        auto /* 16 */
-                        auto /* 17 */
-                        auto /* 18 */
-                        auto /* 19 */
-                        auto /* 20 */
-                        auto; /* 21 */
-
-    grid-template-areas:
-
-    "home" /* Row one: hero spans two columns. */
-    "about-me" /*row 2*/
-    "picture"  /*row 3*/
-    "title1" /*row 4*/
-    "education" /*row 5*/
-    "title2" /* Row 6 */
-    "certifications" /* Row 7 */
-    "title5" /* Row 8 */
-    "soft-skills" /* Row 9 */
-    "title6"  /* Row 10 */
-    "technical-skills" /* Row 11 */
-    "title3" /* Row 12 */
-    "job1" /* Row 12 */
-    "job2" /* Row 13 */
-    "job3" /* Row 14 */
-    "job4" /* Row 15 */
-    "title4" /* Row 16 */
-    "volunteer1"  /* Row 17 */
-    "volunteer2" /* Row 18 */
-    "contact-me" /* Row 19 */
-    "footer" /* row 20 */
+    display: block; /**/
     }
 
 
@@ -114,24 +74,12 @@ body {
 
 body {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto /* 1 */
-                        auto /* 2 */
-                        auto /* 3 */
-                        auto /* 4 */  
-                        auto /* 5 */
-                        auto /* 6 */
-                        auto /* 7 */
-                        auto /* 8 */
-                        auto /* 9 */
-                        auto /* 10 */
-                        auto /* 11 */
-                        auto /* 12 */
-                        auto;/* 13 */ /* based on the number of rows */;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* factions instead of %*/ 
+ 
     grid-template-areas:
 
     "home home about-me about-me" /* Row one: hero spans two columns. */
-    "picture picture picture picture" /* Row two: each is one cell. */
+    "nav nav nav nav" /* Row two: each is one cell. */
     "title1 title1 title2 title2" /* Row 3: each is one cell. */
     "education education certifications certifications" /* Row 4: each is one cell. */
     "title5 title5 title6 title6" /* Row 5: each is one cell. */
@@ -151,24 +99,12 @@ body {
 
     body{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: auto /* 1 */
-                            auto /* 2 */
-                            auto /* 3 */
-                            auto /* 4 */  
-                            auto /* 5 */
-                            auto /* 6 */
-                            auto /* 7 */
-                            auto /* 8 */
-                            auto /* 9 */
-                            auto /* 10 */
-                            auto /* 11 */
-                            auto /* 12 */
-                            auto;/* 13 */ /* based on the number of rows */;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
         grid-template-areas:
     
         "home home about-me about-me" /* Row one: hero spans two columns. */
-        "picture picture picture picture" /* Row two: each is one cell. */
+        "nav nav nav nav" /* Row two: each is one cell. */
         "title1 title1 title2 title2" /* Row 3: each is one cell. */
         "education education certifications certifications" /* Row 4: each is one cell. */
         "title5 title5 title6 title6" /* Row 5: each is one cell. */

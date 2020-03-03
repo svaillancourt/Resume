@@ -11,10 +11,12 @@ body{
   background-repeat: repeat; /* repeat the image */
 }
 
-h1, h2, h3, h4, section, p{
+h1, h2, h3, h4, article, section, p{
 
     background-color: transparent;
     font-family: 'Roboto' ;
+
+    min-width: fit-content;
 }
 
 article {
@@ -31,6 +33,8 @@ p{
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    
+    min-width: fit-content;
 
     text-align: left;
     color:black;
@@ -40,19 +44,20 @@ p{
 }
 
 #profile-picture /* # equals an ID*/ {
-    
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+  width: 50%;
+  height: 50%;
+
+  border: 6px solid black;
 }
 
 #description-title /* # equals an ID*/ {
     
-    font-size: xx-large;
+  font-size: xx-large;
 
-    padding-top: 150px;
-    /* padding-top: 50px; */
-    padding-bottom: 0px;
-    padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
 }
 
 #description-sub /* # equals an ID*/ {
@@ -85,33 +90,30 @@ p{
     font-size: 20px;
 }
 
-footer{
-    opacity: 1;
-}
-
 .banner-title{
     color: white;
     font-size: xx-large;
     text-align: center;
 
+    border: 5 px solid black;
     padding: 32px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .logos{
     float: center;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 60%;
-  }
-
 .title-spacing{
 
     width: auto;
+    min-width: fit-content;
 
     margin-left: auto;
     margin-right: auto;
@@ -124,23 +126,25 @@ footer{
 
 .list-spacing{
 
-    width: auto;
+  width: auto;
+  min-width: fit-content;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    padding-top: 10px;
-    padding-left: 32px;
-    padding-right: 50px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 50px;
+  padding-bottom: 10px;
 
-    font-size: medium;    
-    line-height: 1.7;
+  font-size: medium;    
+  line-height: 1.7;
 }
 
 .text-lists{
 
     width: auto;
+    min-width: fit-content;
 
     margin-top: 5px;
     margin-left: auto;
@@ -155,11 +159,15 @@ footer{
     line-height: 1.7;
 }
 
-.button {
+.style {
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    
     background-color: rgb(24, 107, 214);
     display: inline-block;
+    border: 10px solid black;
+    
     width: 20%;
+    min-width: fit-content;
 
     border: none;
     /* border-radius: 15px 50px; */
@@ -178,28 +186,26 @@ footer{
     font-size: 16px;
   }
   
-  .button:hover {
+  .style:hover {
     background-color: rgb(117,59,189); 
     color: white;
   }
 
-  .button2 {
+  .style2 {
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
     background-color: rgb(134, 39, 212);
     display: inline-block;
     width: 20%;
+    min-width: fit-content;
 
     border: none;
     /* border-radius: 15px 50px; */
-    padding: 15px 32px;
+    padding: 15px 25px;
  
     margin-top: 10px;
     margin-left: 40px;
     margin-bottom: 50px;
     
-    text-align: center;
-    text-decoration: none;
-
     color: white;
     font-size: 16px;
   }

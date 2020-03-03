@@ -20,70 +20,43 @@
     <script scr="./js/scripts.js"></script> <!-- reference your java style folder  -->
 </head>
 
-<!-- Top Navigation Menu -->
-<nav>
-    <ul>
-        <li>
-            <a href="#home">
-                <!-- # leads you to the summary page  -->
-                Home</a></li>
-        <li>
-            <a href="#education">
-                <!-- # leads you to the experience page  -->
-                Education</a></li>
-        <li>
-            <a href="#experience">
-                <!-- # leads you to the experience page  -->
-                Experience </a></li>
-        <li>
-            <a href="#volunteer">
-                <!-- # leads you the volunteer experience page  -->
-                Volunteer</a></li>
-        <li><a href="#contact-me">
-                <!-- # leads you the contact page  -->
-                Contact</a></li>
-    </ul>
-    </div>
-</nav>
-<header>
-
-</header>
-
 <body>
-
-    <section id="home" class="home">
-        <img id="profile-picture" class="center" src="./img/Profile-Photo.jpg" atl="picture of stephane"></img>
-    </section>
+    <!-- Top Navigation Menu -->
+    <header id="home"class="home">
+        <img id="profile-picture" src="./img/Profile-Photo.jpg" atl="picture of stephane"></img>
+    </header>
+    
     <section id="about-me" class="about-me">
         <h1 id="description-title">Hi!</h1>
         <h1 id="description-sub">My name is Stephane!</h1>
+        
         <ul class="list-spacing">I'm an IT Specialist with 8+ years of experience providing critical support to
-            customers
-            and
-            internal stakeholders in a variety of operating systems, software and physical solutions.</ul>
+            customers and internal stakeholders in a variety of operating systems, software and physical solutions.</ul>
 
         <ul class="list-spacing">Fully bilingual with excellent communication and de-escalation skills, passion for
             finding solutions across stakeholder groups and ensure customer satisfaction.</ul>
 
         <ul class="list-spacing">Proven leader and trainer trusted with the development of foundation operating
             materials for use in one–on–one and group settings.</ul>
-        <button class="button">
+        <button class="style">
             <a href="./documents/Resume - Stephane Vaillancourt.pdf" download="proposed_file_name"
-                onclick="window.open('./documents/Resume - Stephane Vaillancourt.pdf')"> Download My CV </a>
+                onclick="window.open('./documents/Resume - Stephane Vaillancourt.pdf')" target="_blank"> Download My
+                CV </a>
         </button>
     </section>
 
-    <section id="picture" class="picture">
+    <section id="nav" class="nav">
         <h2 class="banner-title">Previous Work</h2>
 
-        <a href="index.html"><button class="button2"><i class="fa fa-home"></i> Home</button></a>
+        <a href="#index.html"><button class="style2"><i class="fa fa-home"></i> Home</button></a>
 
-        <a href="education.html"><button class="button2"><i class="fa fa-university"></i> Education</button></a>
+        <a href="#education.html"><button class="style2"><i class="fa fa-university"></i> Education</button></a>
 
-        <a href="education.html"><button class="button2"><i class="fas fa-briefcase"></i> Work</button></a>
+        <a href="#experience.html"><button class="style2"><i class="fas fa-briefcase"></i> Work</button></a>
 
-        <a href="education.html"><button class="button2"><i class="fas fa-hands-helping"></i> Volunteer</button></a>
+        <a href="#volunteer.html"><button class="style2"><i class="fas fa-hands-helping"></i> Volunteer</button></a>
     </section>
+
     <section id="title2" class="title1">
         <h2 class="banner-title">Education</h2>
     </section>
@@ -99,9 +72,11 @@
             <br>
             École Maurice-Lavallée | 2003 - 2006</h3>
     </section>
+
     <section id="title2" class="title2">
         <h2 class="banner-title">Certifications</h2>
     </section>
+    
     <section id="certifications" class="certifications">
         <!-- class is the box-->
         <h3 class="spacing">Computer Courses (Udemy.com)</h3><br>
@@ -118,9 +93,11 @@
         <h2 class="title-spacing">Driver’s License</h2>
         <li class="list-spacing">Class 5 (Full license - Non GDL)</li>
     </section>
+
     <section id="title5" class="title5">
         <h2 class="banner-title">Soft-skills</h2>
     </section>
+    
     <section id="soft-skills" class="soft-skills">
         <h2 class="title-spacing">Soft Skillz</h2>
         <li class="list-spacing">Project Management</li>
@@ -128,9 +105,11 @@
         <li class="list-spacing">Technical Support</li>
         <li class="list-spacing">Team Leadership</li>
     </section>
+    
     <section id="title6" class="title6">
         <h2 class="banner-title">Technical-skills</h2>
     </section>
+    
     <section id="technical-skills" class="technical-skills">
         <li class="list-spacing">Windows 7/8/10</li>
         <li class="list-spacing">Microsoft Office / Google Suites</li>
@@ -147,9 +126,11 @@
         <li class="list-spacing">Team Leadership</li>
         <li class="list-spacing">VMWare/virtualization</li>
     </section>
+    
     <section id="experience" class="title3">
         <h2 class="banner-title">Work Experience</h2>
     </section>
+    
     <section id="job1" class="job1">
         <h2 class="title-spacing">Network Technician – Consumer Test</h2>
         <h2 class="title-spacing"><a href="https://www.telus.com">TELUS</a> / Edmonton, Alberta / March 2013 – July 2019
@@ -178,6 +159,7 @@
             tickets resolved
         </ul>
     </section>
+
     <section id="job2" class="job2">
         <h2 class="title-spacing">Service Technician (Customer Solutions Delivery)</h2>
         <h2 class="title-spacing"><a href="https://www.telus.com"> TELUS</a> / Edmonton, Alberta / March 2011 – February
@@ -207,6 +189,7 @@
             support, customer service, driving process improvement, and customer satisfaction
         </ul>
     </section>
+    
     <section id="job3" class="job3">
         <h2 class="title-spacing">Broadcast Technologist</h2>
         <h3 class="title-spacing"><a href="https://www.cbc.ca">Canadian Broadcasting Corporation</a> / Edmonton, Alberta
@@ -238,6 +221,7 @@
             under tight deadlines, producing quality work and maintained a positive, professional attitude
         </ul>
     </section>
+
     <section id="job4" class="job4">
         <h2 class="title-spacing">Junior Communications Technician</h2>
         <h3 class="title-spacing"> <a href="http://www.glentel.com/home">Glentel Inc</a> / Edmonton, Alberta / Aug 2010
@@ -265,9 +249,11 @@
             customers in the maintenance, installation of wireless services for the City of Edmonton Project
         </ul>
     </section>
+
     <section id="title3" class="title4">
         <h2 class="banner-title">Volunteer</h2>
     </section>
+
     <section id="volunteer1" class="volunteer1">
         <h2 class="title-spacing">Coach - Youth Bowling | 2007 - Present</h2>
         <h2 class="title-spacing">Bonnie Doon Lanes - Edmonton, Alberta</h2>
@@ -279,6 +265,7 @@
             <br>
             Webmaster for <a href="https://www.bonniedoonbowling.com">BonnieDoonBowling.com</a></p>
     </section>
+
     <section id="volunteer" class="volunteer2">
         <h2 class="title-spacing">Founder – Digital Media</h2>
         <h2 class="title-spacing"> <a href="http://www.alleyhoop.ca">Alley Hoop</a> – Basketball Event Organization /
@@ -293,6 +280,7 @@
             Webmaster for <a href="https://svaillancourt.wixsite.com/bluequillclassic">Bluequillclassic.ca</a> & <a
                 href="https://svaillancourt.wixsite.com/reddeertournament">Provincialtournament.com</a> </p>
     </section>
+
     <section id="contact-me" class="contact-me">
         <h2 class="banner-title">Contact Me</h2>
         <div class="container">
@@ -338,12 +326,11 @@
                     </li>
             </div>
     </section>
+
     <section id="footer" class="footer">
         <p>Copyright &#169; 2019 by Stephane Vaillancourt</p>
     </section>
 
-    <footer>
-    </footer>
 </body>
 
 </html>
