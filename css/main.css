@@ -78,6 +78,7 @@ p{
   padding-bottom: 10px;
   padding-left: 20px;
 }
+
 .banner-title{
 
   color: white;
@@ -123,21 +124,23 @@ line-height: 1.7;
 
 .text-lists{
 
-  width: auto;
-  min-width: fit-content;
+width: auto;
+min-width: fit-content;
 
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+margin-top: 5px;
+margin-left: auto;
+margin-right: auto;
 
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
 
-  font-size: small;    
-  line-height: 1.7;
+font-size: small;    
+line-height: 1.7;
+
 }
+
 .style {
   /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
   background-color: rgb(251,67,55);
@@ -212,16 +215,16 @@ line-height: 1.7;
 .soft-skills2 { background: url('../img/backgrounds/90s-pattern-1.jpg'); }
 .technical-skills1 { background: rgb(113,204,195); }
 .technical-skills2 { background: rgb(113,204,195); }
+.title1 { background: rgb(224,152,189); }
+.title2 { background: rgb(251,67,55); }
+.title3 { background: rgb(113,204,195); }
+.title4 { background: rgb(24,101,181) ; }
+.title5 { background: rgb(251,67,55); }
+.title6 { background: rgb(224,152,189); }
 .job1 { background: rgb(224,152,189); }
 .job2 { background: rgb(251,67,55); }
 .job3 { background: rgb(254,249,103); }
 .job4 { background: rgb(24,101,181); }
-.title1 { background: rgb(224,152,189); }
-.title2 { background: rgb(251,67,55); }
-.title3 { background: rgb(254,249,103); }
-.title4 { background: rgb(24,101,181) ; }
-.title5 { background: rgb(113,204,195) ; }
-.title6 { background: rgb(224,152,189); }
 .volunteer1 { background: rgb(24,101,181); }
 .volunteer2 { background: rgb(251,67,55); }
 .footer { background: rgb(254,249,103); }
