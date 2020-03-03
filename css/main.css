@@ -4,6 +4,18 @@
   padding: 0px;
 }
 
+@font-face {
+  font-family: Quacker;
+  src: url(../fonts/Quacker.ttf);
+}
+
+/* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-= */
+
+/* rgb(224,152,189)  pink */ 
+/* rgb(251,67,55)   red  */
+/* rgb(254,249,103)  yellow */
+/* rgb(24,101,181)  blue */
+/* rgb(113,204,195)  teal */
 
 body{
   /*background-image: url(../img/backgrounds/90s-pattern-1.jpg); /*The image used */
@@ -16,8 +28,8 @@ h1, h2, h3, h4, article, section, p{
 
   background-color: transparent;
   font-family: 'Roboto' ;
-
   min-width: fit-content;
+
 }
 
 article {
@@ -44,11 +56,123 @@ p{
   font-size: small;
 }
 
-/* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-= */
+.banner-title{
+
+  color: white;
+  font-family: Roboto;
+  /* font-family: 'Lobster', cursive; */
+  font-size: 3em;
+  text-align: center;
+
+  padding: 30px;
+}
+
+.logos{
+  float: center;
+}
+
+.title-spacing{
+
+  width: auto;
+  min-width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+}
+
+.list-spacing{
+
+min-width: fit-content;
+
+padding-top: 2%;
+padding-left: 3.7%;
+padding-right: 10%;
+padding-bottom: 10px;
+
+font-size: medium;    
+line-height: 1.7;
+}
+
+.text-lists{
+
+  width: auto;
+  min-width: fit-content;
+
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  font-size: small;    
+  line-height: 1.7;
+}
+
+.style {
+  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+  background-color: rgb(251,67,55);
+  border: 3px solid black;
+ 
+  display: inline-block;
+  
+  width: 20%;
+  min-width: fit-content;
+
+  padding: 16px;
+
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  margin-left: 3.5%;
+ 
+  
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: white;
+  font-size: 16px;
+}
+
+.style:hover {
+  background-color: rgb(254,249,103) ; 
+  color: white;
+}
+
+.style2 {
+  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+  background-color: rgb(134, 39, 212);
+  display: inline-block;
+  width: 20%;
+  min-width: fit-content;
+
+  border: none;
+  /* border-radius: 15px 50px; */
+  padding: 15px 25px;
+
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  
+  color: white;
+  font-size: 16px;
+}
+
+.style2:hover {
+  background-color: rgb(177, 55, 25); 
+  color: white;
+}
 
 #description-title /* # equals an ID*/ {
   
-  font-size: xx-large;
+  font-size: 5em;
 
   padding-top: 30px;
   padding-bottom: 10px;
@@ -57,7 +181,7 @@ p{
 
 #description-sub /* # equals an ID*/ {
     
-    font-size: xx-large;
+    font-size: 5em;
     
     padding-top: 0px;
     /* padding-top: 50px; */
@@ -235,20 +359,20 @@ body {
 
 .style {
   /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
-  border: 10px solid black;
   background-color: rgb(251,67,55);
+  border: 3px solid black;
+ 
   display: inline-block;
   
   width: 20%;
   min-width: fit-content;
 
-  border: none;
+  padding: 16px;
 
-  margin-top: 400px;
-  margin-bottom: 32px;
-  margin-left: 30px;
-  margin-right: 16px;
-  
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  margin-left: 3.5%;
+   
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -336,145 +460,3 @@ body {
 
 }
 
-/* rgb(224,152,189)  pink */ 
-/* rgb(251,67,55)   red  */
-/* rgb(254,249,103)  yellow */
-/* rgb(24,101,181)  blue */
-/* rgb(113,204,195)  teal */
-
-#contact-methods li{ /* Direct child selector ">" 
-  The LI must be directly inside the element with the "social-media-links" id in this case.*/
-  display: inline-block;
-}
-
-#contact-methods .fab{     
-  
-  /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
-  /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
-  color:rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-#contact-methods a:hover .fab,
-#contact-methods a:focus .fab,
-#contact-methods a:active .fab{     /* Psuedo=selector with nesting.*/
-  color:rgba(250,66,54, 0.85);
-  font-size: 20px;
-}
-
-.banner-title{
-  color: white;
-  font-size: xx-large;
-  text-align: center;
-
-  border: 5 px solid black;
-  padding: 32px;
-}
-
-.center {
-text-align: center;
-}
-
-.logos{
-  float: center;
-}
-
-.title-spacing{
-
-  width: auto;
-  min-width: fit-content;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-top: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 0px;
-}
-
-.list-spacing{
-
-min-width: fit-content;
-
-padding-top: 2%;
-padding-left: 3.7%;
-padding-right: 10%;
-padding-bottom: 10px;
-
-font-size: medium;    
-line-height: 1.7;
-}
-
-.text-lists{
-
-  width: auto;
-  min-width: fit-content;
-
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-
-  font-size: small;    
-  line-height: 1.7;
-}
-
-.style {
-  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
-  border: 10px solid black;
-  background-color: rgb(251,67,55);
-  display: inline-block;
-  
-  width: 20%;
-  min-width: fit-content;
-
-  border: none;
-  /* border-radius: 15px 50px; */
-  padding: 15px 32px;
-
-  margin-top: 16px;
-  margin-bottom: 32px;
-  margin-left: 3.8%;
-  margin-right: 16px;
-  
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-
-  color: white;
-  font-size: 16px;
-}
-
-.style:hover {
-  background-color: rgb(254,249,103) ; 
-  color: white;
-}
-
-.style2 {
-  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
-  background-color: rgb(134, 39, 212);
-  display: inline-block;
-  width: 20%;
-  min-width: fit-content;
-
-  border: none;
-  /* border-radius: 15px 50px; */
-  padding: 15px 25px;
-
-  margin-top: 10px;
-  margin-left: 40px;
-  margin-bottom: 50px;
-  
-  color: white;
-  font-size: 16px;
-}
-
-.style2:hover {
-  background-color: rgb(177, 55, 25); 
-  color: white;
-}
