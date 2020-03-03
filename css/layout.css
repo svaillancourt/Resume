@@ -1,16 +1,10 @@
 * {
-    font-size: 16px;
     padding: 0;
     margin: 0;
 }
 
 .container {
     position: relative;
-  }
-  .item {
-    position: absolute;
-    top: 20px;
-    left: 30px;
   }
 
   /* rgb(224,152,189)  pink */ 
@@ -21,7 +15,7 @@
   
 .home { background: url('../img/backgrounds/90s-pattern-1.jpg'); }
 .about-me { background: rgb(247, 247, 247); }
-.nav { background: rgb(24, 176, 223)};
+.nav { background: rgb(24,101,181)};
 .education { background: rgb(17, 142, 180); }
 .certifications { background: lightgreen; }
 .soft-skills { background: yellow; }
