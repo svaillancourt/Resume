@@ -1,5 +1,4 @@
 *{ 
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -158,12 +157,10 @@ line-height: 1.7;
   display: inline-block;
   width: 24%;
 
-  padding: 75px 11px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  padding: 50px 1px;
+  margin: 10px;
   color: white;
-  font-size: 50px
+  font-size: 30px
   
 }
 
