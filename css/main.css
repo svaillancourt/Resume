@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: Quacker;
   src: url(../fonts/Quacker.ttf);
@@ -27,6 +32,8 @@ h1, h2, h3, h4, ul, li, p{
 
 li{
   text-align: center;
+  text-decoration: none;
+  list-style: none;
 }
 
 article {
@@ -74,14 +81,16 @@ p{
 }
 
 .banner-title{
-
-  color: white;
   
-  font-family: Roboto;
+  font-family: Roboto Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   /* font-family: 'Lobster', cursive; */
   font-size: 3em;
   text-align: center;
 
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  
   padding: 30px;
 }
 
@@ -214,7 +223,39 @@ line-height: 1.7;
   margin-bottom: 50%;
   
   width: 40%;
-  border: 6px solid black;
+  border-color: 6px solid black;
+  }
+
+body {
+  display: grid;
+  grid-template-columns: 100%; /* factions instead of %*/ 
+  grid-row: auto;
+  
+  grid-template-areas:
+
+  "home" /* Row one: hero spans two columns. */
+  "about-me"
+  "nav" /* Row two: each is one cell. */
+  "title1" /* Row 3: each is one cell. */
+  "education1" /* Row 4: each is one cell. */
+  "title2"
+  "certifications1"  /* Row 4: each is one cell. */
+  "certifications2"
+  "title3" /* Row 5: each is one cell. */
+  "soft-skills1" /* Row 6: third-service spans two columns.  */
+  "soft-skills2"
+  "title4" /* Row 5: each is one cell. */
+  "technical-skills1" /* Row 6: third-service spans two columns.  */
+  "technical-skills2"
+  "title5" /* Row 7: each is one cell. */
+  "job1"  /* Row 8: third-service spans two columns.  */
+  "job2"
+  "job3" 
+  "job4" /* Row 9: third-service spans two columns.  */
+  "title6" /* Row 10: each is one cell. */
+  "volunteer1" 
+  "volunteer2" /* Row 11: each is one cell. */
+  "footer" /* row 12 */
   }
 
 /* -=-=-=-=-=-=-= tablet site -=-=-=-=-=-=-= */
@@ -223,7 +264,8 @@ line-height: 1.7;
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* factions instead of %*/ 
+  grid-template-columns: 25% 25% 25% 25%; /* factions instead of %*/ 
+  grid-row: auto;
 
   grid-template-areas:
 
