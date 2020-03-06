@@ -3,18 +3,13 @@
 #social-media-links {
 list-style: none;
 text-align: center;
-
-margin-top: 15px;
-margin-bottom: 10px;
+padding: 10px;
 
 }
   
 #social-media-links li{ /* Direct child selector ">" 
     The LI must be directly inside the element with the "social-media-links" id in this case.*/
     display: inline;
-    list-style: none;
-    text-align: center;
-    margin: 15px;
     opacity: 1
 }
 
@@ -23,12 +18,14 @@ margin-bottom: 10px;
     /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
     /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
     color:black;
-    font-size: 3vh;
+    font-size: 5vh;
+    margin: 10px;
+
 }
 
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
 #social-media-links a:active .fab{     /* Psuedo=selector with nesting.*/
     color:rgb(251,67,55);
-    font-size: 3vh;
+    font-size: 5vh;
 }

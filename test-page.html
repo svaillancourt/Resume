@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css"> <!-- reference your css style folder -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/social-media-toolbar.css"> <!-- reference your css style folder -->
-    <link rel="stylesheet" href="./css//nav-bar-sticky.css"> <!-- reference your css style folder -->
+    <link rel="stylesheet" href="./css//nav-bar2.css"> <!-- reference your css style folder -->
     <link rel="stylesheet" href="./css/main.css"> <!-- reference your css style folder -->
 
     <!-- PUT THE JAVASCRIPT LINK HERE -->
@@ -23,13 +22,13 @@
 
 <body>
     <!-- Top Navigation Menu -->
-    <header class="home">
-        <img class="profile-picture" src="./img/Profile-Photo.jpg" atl="picture of stephane"></img>
+    <header id="home" class="home">
+        <img id="profile-picture" src="./img/Profile-Photo.jpg" atl="picture of stephane"></img>
     </header>
 
-    <section class="about">
-        <h1 class="description-title">Hi!</h1>
-        <h1 class="description-sub-title">My name is Stéphane!</h1>
+    <section id="about-me" class="about-me">
+        <h1 id="description-title">Hi!</h1>
+        <h1 id="description-sub-title">My name is Stéphane!</h1>
 
         <ul class="list-spacing">I'm an IT Specialist with 8+ years of experience providing critical support to
             customers and internal stakeholders in a variety of operating systems, software and physical solutions.</ul>
@@ -48,22 +47,10 @@
         </button>
     </section>
 
-    <section id="nav-bar-sticky" class="nav">
-        <a href="#education"><button class="style2"><i class="fa fa-university"></i> Education</button></a>
-
-        <a href="#skills"><button class="style2"><i class="fas fa-cogs"></i> Skills</button></a>
-
-        <a href="#experience"><button class="style2"><i class="fas fa-briefcase"></i> Work</button></a>
-
-        <a href="#volunteer"><button class="style2"><i class="fas fa-hands-helping"></i> Volunteer</button></a>
-    </section>
-
-    <section class="title1">
+    <section id="education" class="title1">
         <h2 class="banner-title">Education</h2>
     </section>
-
-    
-    <section class="edu1">
+    <section id="education1" class="education1">
         <br>
         <h2 class="title-spacing">Northern Alberta Institute of Technology</h2>
         <ul class="list-spacing">Telecommunications Engineering Technology Diploma</ul>
@@ -71,13 +58,17 @@
         <ul class="list-spacing">High School Diploma</ul>
         <img class="logos" src="img/logos/nait.png" height="50">
         <img class="logos" src="img/logos/ml.png" height="50">
-    </section> 
+    </section>
+
+    <section class="education2">
+        <h2 class="banner-title">Picture</h2>
+    </section>
 
     <section class="title2">
         <h2 class="banner-title">Certifications</h2>
     </section>
 
-    <section class="cert1">
+    <section id="certifications1" class="certifications1">
         <!-- class is the box-->
         <br>
         <h2 class="title-spacing">University of Alberta</h2>
@@ -90,7 +81,7 @@
         <img class="logos" src="img/logos/udemy-logo.png" height="50">
     </section>
     <!-- class is the box-->
-    <section class="cert2">
+    <section id="certifications2" class="certifications2">
         <br>
         <h2 class="title-spacing">Coaching Courses</h2>
         <ul class="list-spacing">Respect in Sport - Activity Leader</ul>
@@ -98,16 +89,13 @@
         <br>
         <h2 class="title-spacing">Driver’s License</h2>
         <ul class="list-spacing">Class 5 (Full license - Non GDL)</ul>
-        <br>
     </section>
 
-
-    <section class="title3">
+    <section id="skills" class="title3">
         <h2 class="banner-title">Soft-skills</h2>
     </section>
 
-
-    <section class="soft1">
+    <section class="soft-skills1">
         <br>
         <li class="list-spacing">Project Management</li>
         <li class="list-spacing">Time Management</li>
@@ -116,15 +104,14 @@
         <br>
     </section>
 
-
-    <section class="soft2">
+    <section id="soft-skills2" class="soft-skills2">
         <p>placeholder</p>
     </section>
-    <section class="title4">
+    <section id="title4" class="title4">
         <h2 class="banner-title">Technical-skills</h2>
     </section>
 
-    <section class="tech1">
+    <section id="technical-skills1" class="technical-skills1">
         <br>
         <ul class="list-spacing">Windows 7/8/10</ul>
         <ul class="list-spacing">Microsoft Office / Google Suites</ul>
@@ -136,7 +123,7 @@
         <br>
     </section>
 
-    <section class="tech2">
+    <section id="technical-skills2" class="technical-skills2">
         <br>
         <ul class="list-spacing">Computer Networking / IPV4</ul>
         <ul class="list-spacing">TCP/IP, UDP, VLANS, DHCP, DNS</ul>
@@ -148,16 +135,15 @@
         <br>
     </section>
 
-    <section class="title5">
+    <section id="experience" class="title5">
         <h2 class="banner-title">Work Experience</h2>
     </section>
 
-
-    <section class="job1">
+    <section id="job1" class="job1">
         <br>
         <h2 class="title-spacing">Network Technician - Consumer Test</h2>
-        <h2 class="title-spacing"><a href="https://www.telus.com">TELUS</a> - Edmonton, Alberta</h2>
-        <h2 class="title-spacing">March 2013 - July 2019</h2>
+        <h2 class="title-spacing"><a href="https://www.telus.com">TELUS</a> / Edmonton, Alberta / March 2013 - July 2019
+        </h2>
         <ul class="list-spacing">
             Analyzed and supported field technician with live troubleshooting, trouble reports for network services,
             accessing various databases and switches to ensure service information is correct and available for trouble
@@ -184,11 +170,11 @@
         <br>
     </section>
 
-    <section class="job2">
+    <section id="job2" class="job2">
         <br>
         <h2 class="title-spacing">Service Technician (Customer Solutions Delivery)</h2>
-        <h2 class="title-spacing"><a href="https://www.telus.com"> TELUS</a> - Edmonton, Alberta</h2>
-        <h2 class="title-spacing">March 2011 - February 2013</h2>
+        <h2 class="title-spacing"><a href="https://www.telus.com"> TELUS</a> / Edmonton, Alberta / March 2011 - February
+            2013</h2>
         <ul class="list-spacing">
             Installed, repaired, and maintained the integrity of customer premise equipment as well as outside field
             technology; achieved quality metrics, met industry standards and was held accountable for the quality of
@@ -216,11 +202,11 @@
         <br>
     </section>
 
-    <section class="job3">
+    <section id="job3" class="job3">
         <br>
         <h2 class="title-spacing">Broadcast Technologist</h2>
-        <h2 class="title-spacing"><a href="https://www.cbc.ca">Canadian Broadcasting Corporation</a> - Edmonton, Alberta </h2>
-        <h2 class="title-spacing">Dec 2010 - March 2011</h2>
+        <h2 class="title-spacing"><a href="https://www.cbc.ca">Canadian Broadcasting Corporation</a> / Edmonton, Alberta
+            / Dec 2010 - March 2011 </h2>
         <ul class="list-spacing">
             Gathered knowledge and experience working with network connections via satelulte/ISDN/direct feeds. While
             maintaining the server’s that held the information that is being distributed to the telecommunications
@@ -248,12 +234,11 @@
         <br>
     </section>
 
-    <section class="job4">
+    <section id="job4" class="job4">
         <br>
         <h2 class="title-spacing">Junior Communications Technician</h2>
-        <h3 class="title-spacing"> <a href="http://www.glentel.com/home">Glentel Inc</a> - Edmonton, Alberta</h3>
-        <h2 class="title-spacing">Aug 2010 - Dec 2010</h2>
-
+        <h3 class="title-spacing"> <a href="http://www.glentel.com/home">Glentel Inc</a> / Edmonton, Alberta / Aug 2010
+            - Dec 2010</h3>
         <ul class="list-spacing">
             Installed, repaired and maintained the integrity of customer premise equipment as well as outside field
             technology; achieved quality metrics, met industry standards. I was held accountable for the quality of
@@ -279,17 +264,14 @@
         <br>
     </section>
 
- 
-    <section class="title6">
+    <section id="volunteer" class="title6">
         <h2 class="banner-title">Volunteer</h2>
     </section>
 
-
-    <section class="vol1">
+    <section id="volunteer1" class="volunteer1">
         <br>
-        <h2 class="title-spacing">Coach - Youth Bowling</h2>
+        <h2 class="title-spacing">Coach - Youth Bowling | 2007 - Present</h2>
         <h2 class="title-spacing">Bonnie Doon Lanes - Edmonton, Alberta</h2>
-        <h2 class="title-spacing">Sept 2007 - Present</h2>
         <ul class="list-spacing"> <a href="https://www.bonniedoonbowling.com">Bonnie Doon Bowling Lanes</a> / Edmonton,
             Alberta / October 2007 - Present - 2010 </ul>
 
@@ -300,11 +282,11 @@
         <br>
     </section>
 
-    <section class="vol2">
+    <section id="volunteer2" class="volunteer2">
         <br>
-        <h2 class="title-spacing">Founder - Digital Media </h2>
-        <h2 class="title-spacing">Alley Hoop - Basketball Organization / Edmonton, Alberta</h2>
-        <h2 class="title-spacing"> April 2015 - Present</h2>
+        <h2 class="title-spacing">Founder - Digital Media | April 2015 - Present</h2>
+        <h2 class="title-spacing"> Alley Hoop - Basketball Organization / Edmonton, Alberta</h2>
+        <h2 class="title-spacing"></h2>
         <ul class="list-spacing">An Event Organization, our goal is to promote basketball events, give back to our
             communities by connecting with local businesses. We recently rebuilt the Blue Quill Community the community
             basketball courts in the Edmonton area</ul>
@@ -316,20 +298,25 @@
         <br>
     </section>
 
-
-    <section class="foot" role="presentation">
-        <br>
-        <li id="social-media-links">
-            <!-- Always use the target attribute with the "_blank"
+    <section id="footer" class="footer" role="presentation">
+        <ul id="social-media-links">
+            <li class="social-media-links">
+                <!-- Always use the target attribute with the "_blank"
                         as the value when writting external links. Your website will stay in its original browser tabs, and the new link will open in a blank tab -->
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"> <span class="screen-reader-text">Facebook</i></span></a>
-            <a href="http://www.Instagram.com/stepcrazy27" target="_blank"><i class="fab fa-instagram-square"><span class="screen-reader-text">instragm</i></span></a>
-       
-            <a href="http://www.linkedin.com/in/svaillancourt1" target="_blank"><i class="fab fa-linkedin"> <span class="screen-reader-text">Linkedin</i></span></a>
-        
-            <a href="https://www.youtube.com/user/stepcrazy1/" target="_blank"><i class="fab fa-youtube"><span class="screen-reader-text">Youtube</i></span></a></li>
-        <h6>Copyright &#169; 2020 by Stephane Vaillancourt</h6>
-        <br>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"> <span
+                            class="screen-reader-text">Facebook</i></span></a></li>
+            <li class="social-media-links">
+                <a href="http://www.Instagram.com/stepcrazy27" target="_blank"><i class="fab fa-instagram-square">
+                        <span class="screen-reader-text">instragm</i></span></a></li>
+            <li class="social-media-links">
+                <a href="http://www.linkedin.com/in/svaillancourt1" target="_blank"><i class="fab fa-linkedin">
+                        <span class="screen-reader-text">Linkedin</i></span></a></li>
+            <li class="social-media-links">
+                <a href="https://www.youtube.com/user/stepcrazy1/" target="_blank"><i class="fab fa-youtube">
+                        <span class="screen-reader-text">Youtube</i></span></a>
+            </li>
+            <p>Copyright &#169; 2020 by Stephane Vaillancourt</p>
+            <br>
     </section>
 
 </body>
